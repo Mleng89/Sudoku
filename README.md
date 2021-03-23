@@ -2,7 +2,7 @@
 
 A game of Sudoku, with a twist
 
-<hr/>
+
 
 ## Creators:
 
