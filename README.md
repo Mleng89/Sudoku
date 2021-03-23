@@ -1,4 +1,4 @@
-# Sudoku
+# Sudoku (WIP)
 
 A game of Sudoku, with a twist
 
