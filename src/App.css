@@ -1,5 +1,5 @@
 .App {
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	align-items: center;
 	text-align: center;
@@ -28,17 +28,17 @@
 }
 
 .sudoku-board {
-	display:flex;
-	flex-wrap:wrap;
-	width:500px; 
-	height:500px;
+	display: flex;
+	flex-wrap: wrap;
+	width: 500px;
+	height: 500px;
 	border: 5px solid black;
 	margin-top: 50px;
 }
 .sudoku-grid {
-	border:3px solid black; 
+	border: 3px solid black;
 	width: 166.5px;
-	height:167px; 
+	height: 167px;
 	background-color: black;
 }
 
@@ -48,9 +48,23 @@
 } */
 
 .sudoku-grid > tr > td {
-  display:inline-block;
-  border:1px solid black;
-  width: 48px;;
-  height: 47px;
-  background-color: white;
+	display: inline-block;
+	border: 1px solid black;
+	width: 48px;
+	height: 47px;
+	background-color: white;
+}
+
+.number_container {
+	margin-top: 3vh;
+	display: flex;
+	justify-content: space-evenly;
+	border: 1px black solid;
+	min-width: 25%;
+}
+
+.number_container > tr > td {
+	border: 1px solid black;
+	min-height: 10vh;
+	min-width: 10vw;
 }
