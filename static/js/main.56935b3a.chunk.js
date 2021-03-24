@@ -1,2 +1,0 @@
-(this.webpackJsonpsudokubb=this.webpackJsonpsudokubb||[]).push([[0],{11:function(e,n,t){"use strict";t.r(n);var c=t(1),s=t.n(c),u=t(3),o=t.n(u),r=(t(8),t(9),t(0));var i=function(){return Object(r.jsx)("div",{className:"App",children:Object(r.jsx)("h1",{children:"Sudoku"})})};o.a.render(Object(r.jsx)(s.a.StrictMode,{children:Object(r.jsx)(i,{})}),document.getElementById("root"))},8:function(e,n,t){},9:function(e,n,t){}},[[11,1,2]]]);
-//# sourceMappingURL=main.56935b3a.chunk.js.map
