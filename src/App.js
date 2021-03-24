@@ -1,8 +1,9 @@
 import './App.css';
 import { SudokuGrid } from './SudokuGrid';
 import NumberButtons from './NumberButtons';
-
-function App() {
+import { useState } from 'react';
+function App(props) {
+	const [num, setNum] = useState('');
 	return (
 		<div className='App'>
 			<h1>Sudoku</h1>
@@ -14,15 +15,15 @@ function App() {
 				to put it in.
 			</p>
 			<div className='sudoku-board'>
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
-				<SudokuGrid />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
 			</div>
 			<NumberButtons />
 		</div>

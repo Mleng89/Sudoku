@@ -1,21 +1,27 @@
-export function SudokuGrid() {
+import { useState } from 'react';
+
+export function SudokuGrid(props) {
+	const value = props.value;
+	const [cell, setCell] = useState('');
 	return (
-		<table className='sudoku-grid'>
-			<tr>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-			</tr>
-			<tr>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-			</tr>
-			<tr>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-				<td className='sudoku-cell'></td>
-			</tr>
-		</table>
+		<>
+			<table className='sudoku-grid'>
+				<tr>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+				</tr>
+				<tr>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+				</tr>
+				<tr>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+					<td className='sudoku-cell'></td>
+				</tr>
+			</table>
+		</>
 	);
 }

@@ -1,4 +1,6 @@
+import { useState } from 'react';
 export default function NumberButton() {
+	const [num, setNum] = useState();
 	return (
 		<div>
 			<table className='number_container'>
