@@ -8,8 +8,7 @@ export default function NumberButton() {
 			<table className='number_container'>
 				<tr>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button1'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -17,11 +16,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>1</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button2'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -29,11 +27,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>2</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button3'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -41,11 +38,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>3</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button4'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -53,11 +49,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>4</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button5'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -65,11 +60,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>5</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button6'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -77,11 +71,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>6</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button7'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -89,11 +82,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>7</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button8'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -101,11 +93,10 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>8</h2>
-						</a>
+						</button>
 					</td>
 					<td>
-						<a
-							href='/#'
+						<button
 							className='button9'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -113,7 +104,7 @@ export default function NumberButton() {
 							}}
 						>
 							<h2>9</h2>
-						</a>
+						</button>
 					</td>
 				</tr>
 			</table>
