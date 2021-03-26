@@ -14,7 +14,7 @@ function App(props) {
 				Click on a number first before selecting which box in the Sudoku board
 				to put it in.
 			</p>
-			<div className='sudoku-board'>
+			{/* <div className='sudoku-board'>
 				<SudokuGrid value={num} />
 				<SudokuGrid value={num} />
 				<SudokuGrid value={num} />
@@ -24,7 +24,7 @@ function App(props) {
 				<SudokuGrid value={num} />
 				<SudokuGrid value={num} />
 				<SudokuGrid value={num} />
-			</div>
+			</div> */}
 			<NumberButtons />
 		</div>
 	);

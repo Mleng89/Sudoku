@@ -2,6 +2,7 @@ import { useState } from 'react';
 
 export function SudokuGrid(props) {
 	const value = props.value;
+	console.log('what is value?', value);
 	const [cell, setCell] = useState('');
 	return (
 		<>

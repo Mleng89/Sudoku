@@ -1,16 +1,15 @@
 import { useState } from 'react';
+import { SudokuGrid } from './SudokuGrid';
 export default function NumberButton() {
 	const [num, setNum] = useState(0);
-	const onClick = (e) => {
-		console.log(e);
-	};
+
 	return (
 		<div>
 			<table className='number_container'>
 				<tr>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button1'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -22,7 +21,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button2'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -34,7 +33,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button3'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -46,7 +45,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button4'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -58,7 +57,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button5'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -70,7 +69,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button6'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -82,7 +81,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button7'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -94,7 +93,7 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button8'
 							onClick={(e) => {
 								setNum(e.target.innerText);
@@ -106,10 +105,10 @@ export default function NumberButton() {
 					</td>
 					<td>
 						<a
-							href='#'
+							href='/#'
 							className='button9'
 							onClick={(e) => {
-								setNum(e.target.innerHTML);
+								setNum(e.target.innerText);
 								console.log('state', num);
 							}}
 						>
@@ -118,6 +117,17 @@ export default function NumberButton() {
 					</td>
 				</tr>
 			</table>
+			<div className='sudoku-board'>
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+			</div>
 		</div>
 	);
 }
