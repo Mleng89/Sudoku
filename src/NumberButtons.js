@@ -1,36 +1,120 @@
 import { useState } from 'react';
 export default function NumberButton() {
-	const [num, setNum] = useState();
+	const [num, setNum] = useState(0);
+	const onClick = (e) => {
+		console.log(e);
+	};
 	return (
 		<div>
 			<table className='number_container'>
 				<tr>
 					<td>
-						<h2>1</h2>
+						<a
+							href='#'
+							className='button1'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>1</h2>
+						</a>
 					</td>
 					<td>
-						<h2>2</h2>
+						<a
+							href='#'
+							className='button2'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>2</h2>
+						</a>
 					</td>
 					<td>
-						<h2>3</h2>
+						<a
+							href='#'
+							className='button3'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>3</h2>
+						</a>
 					</td>
 					<td>
-						<h2>4</h2>
+						<a
+							href='#'
+							className='button4'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>4</h2>
+						</a>
 					</td>
 					<td>
-						<h2>5</h2>
+						<a
+							href='#'
+							className='button5'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>5</h2>
+						</a>
 					</td>
 					<td>
-						<h2>6</h2>
+						<a
+							href='#'
+							className='button6'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>6</h2>
+						</a>
 					</td>
 					<td>
-						<h2>7</h2>
+						<a
+							href='#'
+							className='button7'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>7</h2>
+						</a>
 					</td>
 					<td>
-						<h2>8</h2>
+						<a
+							href='#'
+							className='button8'
+							onClick={(e) => {
+								setNum(e.target.innerText);
+								console.log('state', num);
+							}}
+						>
+							<h2>8</h2>
+						</a>
 					</td>
 					<td>
-						<h2>9</h2>
+						<a
+							href='#'
+							className='button9'
+							onClick={(e) => {
+								setNum(e.target.innerHTML);
+								console.log('state', num);
+							}}
+						>
+							<h2>9</h2>
+						</a>
 					</td>
 				</tr>
 			</table>
