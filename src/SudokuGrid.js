@@ -11,6 +11,7 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
@@ -21,6 +22,7 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
@@ -31,38 +33,7 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
-								e.target.innerText = value;
-								console.log(e.target.innerText);
-							}}
-						>
-							_
-						</button>
-					</td>
-				</tr>
-				<tr>
-					<td className='sudoku-cell'>
-						<button
-							onClick={(e) => {
-								e.target.innerText = value;
-								console.log(e.target.innerText);
-							}}
-						>
-							_
-						</button>
-					</td>
-					<td className='sudoku-cell'>
-						<button
-							onClick={(e) => {
-								e.target.innerText = value;
-								console.log(e.target.innerText);
-							}}
-						>
-							_
-						</button>
-					</td>
-					<td className='sudoku-cell'>
-						<button
-							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
@@ -75,6 +46,7 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
@@ -85,6 +57,7 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
@@ -95,6 +68,42 @@ export function SudokuGrid(props) {
 					<td className='sudoku-cell'>
 						<button
 							onClick={(e) => {
+								if (value === 0) return;
+								e.target.innerText = value;
+								console.log(e.target.innerText);
+							}}
+						>
+							_
+						</button>
+					</td>
+				</tr>
+				<tr>
+					<td className='sudoku-cell'>
+						<button
+							onClick={(e) => {
+								if (value === 0) return;
+								e.target.innerText = value;
+								console.log(e.target.innerText);
+							}}
+						>
+							_
+						</button>
+					</td>
+					<td className='sudoku-cell'>
+						<button
+							onClick={(e) => {
+								if (value === 0) return;
+								e.target.innerText = value;
+								console.log(e.target.innerText);
+							}}
+						>
+							_
+						</button>
+					</td>
+					<td className='sudoku-cell'>
+						<button
+							onClick={(e) => {
+								if (value === 0) return;
 								e.target.innerText = value;
 								console.log(e.target.innerText);
 							}}
