@@ -5,6 +5,20 @@ export default function NumberButton() {
 
 	return (
 		<div>
+			<div className='sudoku-board'>
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+				<SudokuGrid value={num} />
+			</div>
+			<button>Submit</button>
+			<button>Clear Board</button>
+			<button>Randomize</button>
 			<table className='number_container'>
 				<tr>
 					<td>
@@ -106,19 +120,19 @@ export default function NumberButton() {
 							<h2>9</h2>
 						</button>
 					</td>
+					<td>
+						<button
+							className='buttonclear'
+							onClick={(e) => {
+								setNum('_');
+								console.log('state', num);
+							}}
+						>
+							<h2>Clear</h2>
+						</button>
+					</td>
 				</tr>
 			</table>
-			<div className='sudoku-board'>
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-				<SudokuGrid value={num} />
-			</div>
 		</div>
 	);
 }

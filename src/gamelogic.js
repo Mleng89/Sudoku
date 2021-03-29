@@ -1,7 +1,4 @@
-import NumberButtons from './NumberButtons';
-import { SudokuGrid } from './SudokuGrid';
-
-export function gamelogic() {
+export function Gamelogic() {
 	const handleClick = (e) => {
 		e.preventDefault();
 		console.log('this was clicked');
